@@ -34,23 +34,36 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Up View Controller-->
         <scene sceneID="kjJ-H8-T66">
             <objects>
-                <viewController id="RGi-z6-Pq7" sceneMemberID="viewController">
+                <viewController id="RGi-z6-Pq7" customClass="SetUpViewController" customModule="MusicAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ncq-2A-8SZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-bk-hgO">
-                                <rect key="frame" x="42" y="683" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="album"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIr-jl-Brs">
-                                <rect key="frame" x="319" y="715" width="64" height="64"/>
+                                <rect key="frame" x="284" y="698" width="110" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="flip"/>
+                                <connections>
+                                    <action selector="cameraSwitchTapped:" destination="RGi-z6-Pq7" eventType="touchUpInside" id="jrG-0z-4dU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXO-1u-EuQ" customClass="SwiftyRecordButton" customModule="MusicAPI" customModuleProvider="target">
+                                <rect key="frame" x="178" y="749" width="87" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99681133030000002" green="0.5897114873" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="楽曲"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-bk-hgO">
+                                <rect key="frame" x="0.0" y="683" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="album"/>
+                                <connections>
+                                    <action selector="openAlbum:" destination="RGi-z6-Pq7" eventType="touchUpInside" id="5xi-2K-aC2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bqv-ou-8P4"/>
@@ -58,12 +71,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="PB8-iZ-gia"/>
                     <connections>
+                        <outlet property="captureButton" destination="LXO-1u-EuQ" id="Upi-L6-rnj"/>
+                        <outlet property="flipCameraButton" destination="ZIr-jl-Brs" id="aGy-tB-2Wv"/>
                         <segue destination="Ucr-yy-fAb" kind="show" id="Eig-Ez-lVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYF-WN-9EG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="64"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="63.616071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hl2-ai-S0B">
@@ -83,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="qha-Xc-87X">
             <objects>
-                <viewController id="Ucr-yy-fAb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditVC" id="Ucr-yy-fAb" customClass="EditViewController" customModule="MusicAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XnV-1U-gQy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

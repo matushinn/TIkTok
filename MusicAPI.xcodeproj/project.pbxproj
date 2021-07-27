@@ -15,6 +15,12 @@
 		373FBD7026AFE33A00F7E85D /* MusicAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD6F26AFE33A00F7E85D /* MusicAPITests.swift */; };
 		373FBD7B26AFE33A00F7E85D /* MusicAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD7A26AFE33A00F7E85D /* MusicAPIUITests.swift */; };
 		373FBD8B26AFE4A700F7E85D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD8A26AFE4A700F7E85D /* ViewController.swift */; };
+		373FBD8D26AFEB4600F7E85D /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD8C26AFEB4600F7E85D /* SetUpViewController.swift */; };
+		373FBD9026AFEC5400F7E85D /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD8F26AFEC5400F7E85D /* SwiftyRecordButton.swift */; };
+		373FBD9226AFEC7D00F7E85D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD9126AFEC7D00F7E85D /* LoadingView.swift */; };
+		373FBD9626AFECA000F7E85D /* AuthCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD9526AFECA000F7E85D /* AuthCheck.swift */; };
+		373FBD9826AFECA800F7E85D /* VAVideoCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD9726AFECA800F7E85D /* VAVideoCompressor.swift */; };
+		373FBD9A26AFEF0300F7E85D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FBD9926AFEF0300F7E85D /* EditViewController.swift */; };
 		A0225F5257679EFE806F22CB /* Pods_MusicAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0355D43B88287BA85D748 /* Pods_MusicAPI.framework */; };
 		A421215BBD53C2338FA8106C /* Pods_MusicAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899B9740141672ADAA578874 /* Pods_MusicAPITests.framework */; };
 		B3DF8D22855507BE0F88709A /* Pods_MusicAPI_MusicAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4488227495A5E85A6E66CF /* Pods_MusicAPI_MusicAPIUITests.framework */; };
@@ -56,6 +62,12 @@
 		373FBD7C26AFE33A00F7E85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373FBD8826AFE45600F7E85D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		373FBD8A26AFE4A700F7E85D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		373FBD8C26AFEB4600F7E85D /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		373FBD8F26AFEC5400F7E85D /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
+		373FBD9126AFEC7D00F7E85D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		373FBD9526AFECA000F7E85D /* AuthCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCheck.swift; sourceTree = "<group>"; };
+		373FBD9726AFECA800F7E85D /* VAVideoCompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAVideoCompressor.swift; sourceTree = "<group>"; };
+		373FBD9926AFEF0300F7E85D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		5AD0355D43B88287BA85D748 /* Pods_MusicAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DFAE54CA098712160632EE /* Pods-MusicAPI-MusicAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAPI-MusicAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-MusicAPI-MusicAPIUITests/Pods-MusicAPI-MusicAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		83EE415A0DF9D67EF54BA12D /* Pods-MusicAPI-MusicAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAPI-MusicAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MusicAPI-MusicAPIUITests/Pods-MusicAPI-MusicAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +141,9 @@
 			children = (
 				373FBD5826AFE33200F7E85D /* AppDelegate.swift */,
 				373FBD5A26AFE33200F7E85D /* SceneDelegate.swift */,
+				373FBD9426AFEC9400F7E85D /* Util */,
+				373FBD9326AFEC8D00F7E85D /* Model */,
+				373FBD8E26AFEC1600F7E85D /* View */,
 				373FBD8926AFE48400F7E85D /* Controller */,
 				373FBD5E26AFE33200F7E85D /* Main.storyboard */,
 				373FBD8826AFE45600F7E85D /* README.md */,
@@ -161,8 +176,35 @@
 			isa = PBXGroup;
 			children = (
 				373FBD8A26AFE4A700F7E85D /* ViewController.swift */,
+				373FBD8C26AFEB4600F7E85D /* SetUpViewController.swift */,
+				373FBD9926AFEF0300F7E85D /* EditViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		373FBD8E26AFEC1600F7E85D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				373FBD8F26AFEC5400F7E85D /* SwiftyRecordButton.swift */,
+				373FBD9126AFEC7D00F7E85D /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		373FBD9326AFEC8D00F7E85D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				373FBD9526AFECA000F7E85D /* AuthCheck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		373FBD9426AFEC9400F7E85D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				373FBD9726AFECA800F7E85D /* VAVideoCompressor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		78EB8FD35793455AC87FE2D1 /* Pods */ = {
@@ -416,9 +458,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373FBD9026AFEC5400F7E85D /* SwiftyRecordButton.swift in Sources */,
+				373FBD8D26AFEB4600F7E85D /* SetUpViewController.swift in Sources */,
 				373FBD8B26AFE4A700F7E85D /* ViewController.swift in Sources */,
+				373FBD9626AFECA000F7E85D /* AuthCheck.swift in Sources */,
 				373FBD5926AFE33200F7E85D /* AppDelegate.swift in Sources */,
+				373FBD9826AFECA800F7E85D /* VAVideoCompressor.swift in Sources */,
 				373FBD5B26AFE33200F7E85D /* SceneDelegate.swift in Sources */,
+				373FBD9226AFEC7D00F7E85D /* LoadingView.swift in Sources */,
+				373FBD9A26AFEF0300F7E85D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

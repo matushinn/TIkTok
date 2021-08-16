@@ -11,7 +11,7 @@
 
 ** ライブラリのインストール
 ```
-	pod "SwiftyCam"
+  pod "SwiftyCam"
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'SwiftVideoGenerator'
